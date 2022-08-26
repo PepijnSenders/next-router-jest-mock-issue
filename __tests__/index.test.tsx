@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import Home from '@/pages/index'
 
+jest.mock('next/router');
+
 describe('Home', () => {
   it('renders a heading', () => {
     render(<Home />)
